@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minatudo</title>
+    <script src="JS/formHandler.js" defer></script>
+</head>
+<body>
+    <h1>Cadastro de Mineradores</h1>
+    <form id="mineradorForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone"><br><br>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required><br><br>
+
+        <label for="horas_trabalhadas">Horas Trabalhadas:</label>
+        <input type="number" id="horas_trabalhadas" name="horas_trabalhadas" step="0.1"><br><br>
+
+        <input type="submit" value="Cadastrar Minerador">
+    </form>
+
+    <h1>Cadastro de Minérios</h1>
+    <form id="minerioForm">
+        <label for="nome_minerio">Nome do Minério:</label>
+        <input type="text" id="nome_minerio" name="nome_minerio" required><br><br>
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao"></textarea><br><br>
+
+        <input type="submit" value="Cadastrar Minério">
+    </form>
+</body>
+</html>
